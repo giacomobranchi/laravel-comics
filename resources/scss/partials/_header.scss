@@ -1,0 +1,11 @@
+img {
+    width: 80px;
+}
+
+.border_nav {
+    height: 100%;
+
+    &:hover {
+        border-bottom: 5px solid #0282f9;
+    }
+}
