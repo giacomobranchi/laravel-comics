@@ -131,16 +131,33 @@ Route::get('/', function () {
                 'img' => 'resources/img/buy-comics-digital-comics.png', 'text' => 'DIGITAL COMICS'
             ],
             [
-                'img' => '../img/buy-comics-merchandise.png', 'text' => 'DC MERCHANDISE'
+                'img' => 'resources/img/buy-comics-merchandise.png', 'text' => 'DC MERCHANDISE'
             ],
             [
-                'img' => '../img/buy-comics-subscriptions.png', 'text' => 'SUBSCRIPTIONS'
+                'img' => 'resources/img/buy-comics-subscriptions.png', 'text' => 'SUBSCRIPTIONS'
             ],
             [
-                'img' => '../img/buy-comics-shop-locator.png', 'text' => 'COMIC SHOP LOCATOR'
+                'img' => 'resources/img/buy-comics-shop-locator.png', 'text' => 'COMIC SHOP LOCATOR'
             ],
             [
-                'img' => '../img/buy-dc-power-visa.svg', 'text' => 'DC POWER VISA'
+                'img' => 'resources/img/buy-dc-power-visa.svg', 'text' => 'DC POWER VISA'
+            ]
+        ],
+        'footerSocialLinks' => [
+            [
+                'name' => 'facebook', 'icon' => 'resources/img/footer-facebook.png'
+            ],
+            [
+                'name' => 'twitter', 'icon' => 'resources/img/footer-twitter.png'
+            ],
+            [
+                'name' => 'youTube', 'icon' => 'resources/img/footer-youtube.png'
+            ],
+            [
+                'name' => 'pinterest', 'icon' => 'resources/img/footer-pinterest.png'
+            ],
+            [
+                'name' => 'periscope', 'icon' => 'resources/img/footer-periscope.png'
             ]
         ]
     ]);
