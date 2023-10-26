@@ -32,21 +32,40 @@
             <div class="container">
                 <span class="current">CURRENT SERIES</span>
                 <div class="row">
-                    <div v-for="product in products" class="col-2">
+                    @foreach ($products as $index => $product)
+                    <div class="col-2">
+                        
                         <div class="p-2">
-                            <div class="card_header" :style="{ 'background-image': 'url(' + product.thumb + ')' }"
-                                style="background-position: top; background-size: cover; background-repeat: no-repeat;">
+                            <div class="card_header" 
+                                style="background-position: top; background-size: cover; background-repeat: no-repeat; background-image: url({{$product['thumb']}})">
 
                             </div>
                             <div class=" text-white py-2">
-                                <div class="upper">{{ product.series }}</div>
+                                <div class="upper">{{ $product['series'] }}</div>
                             </div>
                         </div>
                     </div>
+                    @endforeach
                 </div>
             </div>
         </div>
     </main>
+    <footer>
+        <div class="band p-5">
+            <div class="container">
+              <div class="row align-items-center">
+                @foreach ($footerNavLinks as $index => $link)
+                <div class="col d-flex align-items-center">
+                    <div class="img_container" style="background-image: url({{$link['img']}})">
+                        
+                    </div>
+                    <div class="p-2 small">{{ $link['text'] }}</div>
+                </div>
+                @endforeach
+              </div>
+            </div>
+          </div>
+    </footer>
     
 </body>
 
