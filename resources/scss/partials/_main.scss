@@ -1,0 +1,40 @@
+main {
+    & .bg_dark {
+        background-color: #1c1c1c;
+        position: relative;
+        padding: 3rem;
+    }
+
+    & .crop {
+        height: 450px;
+
+        background-image: url(../img/jumbotron.jpg);
+    }
+
+    & .card_header {
+        aspect-ratio: 1;
+    }
+
+    & .current {
+        background-color: #0282f9;
+        color: white;
+        padding: 0.5rem;
+        text-align: center;
+        margin-top: -2rem;
+        display: inline-block;
+        font-size: 1.5rem;
+        position: absolute;
+        top: 0;
+        font-weight: bold;
+    }
+
+    & img {
+        width: 100%;
+
+
+    }
+
+    & .upper {
+        text-transform: uppercase;
+    }
+}
